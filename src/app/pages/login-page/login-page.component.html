@@ -1,0 +1,19 @@
+<div class="login-page justify-center items-center">
+  <div class="card-container">
+    <section hlmCard style="padding: 15px;">
+      <div hlmCardHeader>
+        <h3 hlmCardTitle>Üdvözöljük!</h3>
+        <p hlmCardDescription>Kérjük jelentkezzen be</p>
+      </div>
+      <spartan-input hlmCardContent [placeHolder]="'E-mail cím'" [formControl]="emailFormControl"></spartan-input>
+      <spartan-input hlmCardContent [placeHolder]="'Jelszó'" [formControl]="passwordFormControl"></spartan-input>
+      <div class="flex justify-center items-center">
+        <spartan-secondary-button hlmCardFooter [label]="'Bejelentkezés'" (click)="login()" [routerLink]="''"></spartan-secondary-button>
+      </div>
+      <div class="flex justify-center items-center">
+        <p>Még nincs fiókod?</p>
+        <spartan-primary-button hlmCardFooter [label]="'Regisztráció'" class="pt-25" [routerLink]="'/register'"></spartan-primary-button>
+      </div>
+    </section>
+  </div>
+</div>

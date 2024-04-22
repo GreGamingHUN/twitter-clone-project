@@ -1,0 +1,20 @@
+<div class="login-page justify-center items-center">
+  <div class="card-container">
+    <section hlmCard style="padding: 15px;">
+      <div hlmCardHeader>
+        <h3 hlmCardTitle>Üdvözöljük!</h3>
+        <p hlmCardDescription>Regisztráljon most!</p>
+      </div>
+      <spartan-input hlmCardContent [placeHolder]="'E-mail cím'" [formControl]="emailFormControl"></spartan-input>
+      <spartan-input hlmCardContent [placeHolder]="'Felhasználónév'" [formControl]="usernameFormControl" ></spartan-input>
+      <spartan-input hlmCardContent [placeHolder]="'Jelszó'" [formControl]="passwordFormControl" ></spartan-input>
+      <div class="flex justify-center items-center">
+        <spartan-primary-button hlmCardFooter [label]="'Regisztráció'" (click)="register()" [routerLink]="'/'"></spartan-primary-button>
+      </div>
+      <div class="flex justify-center items-center">
+        <p>Van már fiókod?</p>
+        <spartan-secondary-button hlmCardFooter [label]="'Bejelentkezés'" [routerLink]="'/login'" class="pt-25"></spartan-secondary-button>
+      </div>
+    </section>
+  </div>
+</div>
